@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class fiveStrings {
+    public static void main(String[] args) {
+        System.out.println("----------System Start----------");
+        String [] fiveStrings = new String[5];
+        String [] movieNumber = new String[5];
+        movieNumber[0] = "first";
+        movieNumber[1] = "second";
+        movieNumber[2] = "third";
+        movieNumber[3] = "fourth";
+        movieNumber[4] = "fifth";
+        int x = 0;
+        fiveStrings[0] = "Willy Wonka and the Chocolate Factory";
+        fiveStrings[1] = "The Dark Knight Rises";
+        fiveStrings[2] = "Mighty Joe Young";
+        fiveStrings[3] = "Space Jam";
+        fiveStrings[4] = "The Grand Budapest Hotel";
+        for (int i = 0; i < 5; i++) {
+            System.out.println("My " + movieNumber[x] + " favorite movie is " + fiveStrings[i] + ".");
+            x++;
+        }
+    }
+
+    public static int getIntFromUser(String prompt) {
+        System.out.println(prompt);
+        Scanner userScanner = new Scanner(System.in);
+        return userScanner .nextInt();
+    }
+  }
